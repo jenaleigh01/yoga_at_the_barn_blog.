@@ -1,0 +1,1 @@
+web: gunicorn yoga_blog.wsgi
