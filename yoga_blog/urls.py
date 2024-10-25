@@ -21,6 +21,7 @@ from home.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='home'),
     path('blog/', include("blog.urls"), name='blog'),
+    path('summernote/', include('django_summernote.urls')),
+    path('', index, name='home'),
 ]
