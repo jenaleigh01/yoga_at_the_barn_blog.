@@ -4,37 +4,31 @@
 
 <div class="masthead">
     <div class="container">
-        <div class="row g-0">
+        <div class="row">
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="card-img-top" src="{% static 'images/yoga-class.jpg' %}" alt="placeholder image">
+                <img class="blog-img" src="{% static 'images/yoga-class.jpg' %}" alt="placeholder image">
                 {% else %}
-                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
+                <img class="blog-img" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                 {% endif %}
+                <div class="card-body">
+                    <!-- The post content goes inside the card-text. -->
+                    <!-- Use the | safe filter inside the template tags -->
+                    <p class="card-text">
+                        {{ post.content | safe }}
+                    </p>
+                    <!-- Post author goes before the | the post's created date goes after -->
+                    <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ post.content | safe }}
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Displaying count of comments -->
 <div class="row">
     <div class="col-12">

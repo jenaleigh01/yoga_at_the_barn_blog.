@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
 /* Navbar */
 .navbar-light .navbar-brand {
     font-family: "Bad Script", cursive, sans-serif;
@@ -19,12 +25,56 @@
     font-weight: 300;
     text-decoration-color: #f4d1f0;
     text-decoration-line: underline;
-    
+  }
+
+  .text-end {
+    font-size: small;
   }
   
   /* Change the color of the active navigation link */
+  .hero-title {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: rgb(180, 203, 245);
+    padding-top: 5px;
+}
+
+  .hero-img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    padding: 40px 30px;
+  }
   
-  
+  .card-title {
+    font-family: "Reddit Mono", monospace, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #f4d1f0;
+  }
+
+  .card-text {
+    font-family: "Reddit Mono", monospace, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: #f4d1f0;
+  }
+
+  h1 {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color:#f4d1f0;
+    }
+
+  .blog-img {
+    width: 35%;
+    height: auto;
+    float: right;
+    padding-left: 7px;
+  }
   
   
   
