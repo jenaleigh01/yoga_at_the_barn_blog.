@@ -29,9 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-jenaleigh01-yogaattheba-rr9rhuin31z.ws-eu116.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-jenaleigh01-yogaattheba-xj9s8h9muwr.ws-eu116.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
