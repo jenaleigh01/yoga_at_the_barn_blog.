@@ -1,12 +1,12 @@
 {% extends "base.html" %}
+
 {% block content %}
+
 {% load static %}
 
-<div class="container mt-5">
+<div class="container">
     <div class="row">
-        <div class="col-4 text-center">
-        </div>
-        <div class="col-8">
+        <div class="info-card col-12 mt-2 mb-2">
             <!-- Title goes between these h2 tags -->
             <h2>{{ about.title }}</h2>
             <!-- Content goes directly underneath this -->
@@ -14,11 +14,31 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-right">
+        <div class="col">
             <!-- Updated on field goes in here -->
 
-            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+            <p class="text-left mt-2"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
 </div>
+
+<h2 class="text-center mb-4 mt-4">Photo Gallery</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="gallery col-md-4 mt-3 col-lg-3">
+            <img src="{% static 'images/ceremony.jpg' %}" alt="opening ceremony" class="img-fluid">
+            <div class="description mt-2 mb-4 text-center">Yoga retreat Opening Ceremony</div>
+        </div>
+        <div class="gallery col-md-4 mt-3 col-lg-3">
+            <img src="{% static 'images/happy.jpg' %}" alt="happy people at yoga class" class="img-fluid">
+            <div class="description mt-2 mb-4 text-center">Smiles all round at the Barn</div>
+        </div>
+        <div class="gallery col-md-4 mt-3 col-lg-3">
+            <img src="{% static 'images/classtalks.jpg' %}" alt="yoga class" class="img-fluid">
+            <div class="description mt-2 mb-4 text-center">Chit Chat after a beautiful class</div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

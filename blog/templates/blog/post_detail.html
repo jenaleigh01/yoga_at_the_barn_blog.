@@ -2,27 +2,35 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+<div class="container">
+    <div class="row">
+        <div class="text-left mb-2">
+            <button onclick="window.history.back()" class="btn btn-link">&laquo; Back</button>
+        </div>
+    </div>
+</div>
+
 <div class="masthead">
     <div class="container">
         <div class="row">
             <div class="col-md-6 masthead-text">
                 <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
+                <h1 class="post-title text-center">{{ post.title }}</h1>
             </div>
             <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="blog-img" src="{% static 'images/yoga-class.jpg' %}" alt="placeholder image">
-                {% else %}
-                <img class="blog-img" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
+                <img class="blog-img mt-2 img-fluid mx-auto d-block" src="{% static 'images/yoga-class.jpg' %}" alt="placeholder image">
+                {% else %} 
+                <img class="blog-img mt-2 img-fluid mx-auto d-block" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                 {% endif %}
-                <div class="blog-body">
+                <div class="blog-body mx-3 text-center">
                     <!-- The post content goes inside the card-text. -->
                     <!-- Use the | safe filter inside the template tags -->
                     <p class="card-text">
                         {{ post.content | safe }}
                     </p>
                     <!-- Post author goes before the | the post's created date goes after -->
-                    <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                    <p class="post-subtitle">{{ post.author }}</p>
                 </div>
             </div>
         </div>
@@ -31,7 +39,7 @@
 
 <!-- Displaying count of comments -->
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 mx-4">
         <strong class="text-secondary">
             <i class="far fa-comments"></i> {{ comment_count }}
         </strong>
@@ -78,12 +86,12 @@
     <div class="col-md-4 card mb-4 mt-3">
         <div class="card-body">
             {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>
+            <h3>Leave a comment here:</h3>
             <p>Posting as: {{ user.username }}</p>
             <form id="commentForm" method="post" style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}
                 {% csrf_token %}
-                <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+                <button id="submitButton" type="submit" class="btn btn-outline-primary">Submit</button>
             </form>
             {% else %}
             <p>Log in to leave a comment</p>

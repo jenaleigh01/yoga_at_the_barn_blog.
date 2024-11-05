@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-
+/* body { */
+  /* margin: 15px; */
+/* } */
 
 /* Navbar */
 .navbar-light .navbar-brand {
@@ -31,7 +33,6 @@
     font-size: small;
   }
   
-  /* Change the color of the active navigation link */
   .hero-title {
     font-family: "Bad Script", cursive, sans-serif;
     font-weight: 500;
@@ -41,10 +42,17 @@
 }
 
   .hero-img{
-    width: 100%;
-    height: auto;
     opacity: 0.8;
     padding: 40px 30px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .card-title {
@@ -52,6 +60,7 @@
     font-size: 20px;
     text-decoration: underline;
     text-decoration-color: #f4d1f0;
+    margin-top: 5px;
   }
 
   .card-text {
@@ -76,8 +85,59 @@
     padding-left: 7px;
   }
   
-  
-  
+  h2 {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color:#f4d1f0;
+    padding-bottom: 2px;
+  }
+
+  .info-card {
+    font-family: "Reddit Mono", monospace, sans-serif;
+    text-align: center;
+  }
+
+  .text-left {
+    font-size: small;
+    font-weight: bold;
+  }
+
+  /* Photo Gallery */
+  /* div.gallery { */
+    /* border: 1px solid #ccc; */
+  /* } */
+
+  /* div.gallery img { */
+    /* width: 100%; */
+    /* height: auto; */
+  /* } */
+
+  /* div.desc { */
+    /* padding: 10px; */
+    /* text-align: center; */
+  /* } */
+
+  /* .responsive { */
+    /* padding: 0.6px; */
+    /* width: 24.99999%; */
+  /* } */
+
+  /* @media only screen and (max-width: 700px) { */
+    /* .responsive{ */
+      /* width: 49.99999%; */
+      /* margin: 6px 0; */
+    /* } */
+  /* } */
+
+  /* @media only screen and (max-width: 500px) { */
+    /* .responsive { */
+      /* width: 100%; */
+    /* } */
+  /* } */
+
+
   /* Footer */
   footer {
     font-family: "Reddit Mono", monospace, sans-serif;

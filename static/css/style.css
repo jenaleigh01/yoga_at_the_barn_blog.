@@ -28,7 +28,8 @@
     text-decoration-color: #f4d1f0;
     text-decoration-line: underline;
   }
-
+  
+  /* Homepage */
   .text-end {
     font-size: small;
   }
@@ -45,7 +46,15 @@
     opacity: 0.8;
     padding: 40px 30px;
   }
-
+  
+  /* Blog page */
+  .card {
+    border: none;
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
   .card-img-top {
     width: 100%;
     max-width: 300px;
@@ -53,6 +62,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 8px;
   }
   
   .card-title {
@@ -70,21 +80,83 @@
     text-decoration-color: #f4d1f0;
   }
 
+  .text-muted {
+    font-size: small;
+  }
+
+  
+
   h1 {
     font-family: "Bad Script", cursive, sans-serif;
     font-size: 25px;
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color:#f4d1f0;
+    margin-top: 2px;
     }
 
   .blog-img {
-    width: 35%;
+    width: 45%;
     height: auto;
-    float: right;
-    padding-left: 7px;
+    border-radius: 8px;
+  }
+
+  .blog-body {
+    font-family: "Reddit Mono", monospace, sans-serif;
+  }
+
+  .post-subtitle {
+    font-size: small;
+    font-weight: bold;
   }
   
+  h3 {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #f4d1f0;
+  }
+  
+
+  h2 {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color:#f4d1f0;
+    padding-bottom: 2px;
+  }
+
+  .info-card {
+    font-family: "Reddit Mono", monospace, sans-serif;
+    text-align: center;
+  }
+
+  .text-left {
+    font-size: small;
+    font-weight: bold;
+  }
+
+  /* Photo Gallery */
+  .gallery img {
+    border-radius: 8px;
+  }
+
+  .description {
+    font-size: small;
+    font-weight: bold;
+    font-family: "Reddit Mono", monospace, sans-serif;
+  }
+
+  /* @media screen and (min-width: 1024px) { */
+    /* .gallery img { */
+      /* display: flex; */
+      /* justify-content: space-between; */
+      /* align-items: center; */
+    /* } */
+  /* } */
+
+
   /* Footer */
   footer {
     font-family: "Reddit Mono", monospace, sans-serif;
