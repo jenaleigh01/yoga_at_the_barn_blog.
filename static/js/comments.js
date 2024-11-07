@@ -44,3 +44,13 @@ for (let button of deleteButtons) {
       deleteModal.show();
     });
   }
+
+  /** get all the stars */
+  const one = document.getElementById('first')
+  const two = document.getElementById('second')
+  const three = document.getElementById('third')
+  const four = document.getElementById('forth')
+  const five = document.getElementById('fifth')
+
+  
+

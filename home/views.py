@@ -13,8 +13,15 @@ def index(request):
 
 
 def rating_view(request):
-    obj = Rating.objects.filter(score=0).order_by("?").first()
-    context ={
-        'object': obj
+    queryset = Rating.objects.all()
+    template_name = "home/index.html"
+    
+    return render(
+        request, 
+        "home/index.html",
+    {
+       "rating": rating, 
     }
-    return render(request, 'home/index.html', context)
+
+)
+    
