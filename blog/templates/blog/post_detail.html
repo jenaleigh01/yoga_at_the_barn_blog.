@@ -23,7 +23,7 @@
                 {% else %} 
                 <img class="blog-img mt-2 img-fluid mx-auto d-block" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
                 {% endif %}
-                <div class="blog-body mx-3 text-center">
+                <div class="blog-body text-center">
                     <!-- The post content goes inside the card-text. -->
                     <!-- Use the | safe filter inside the template tags -->
                     <p class="card-text">
@@ -39,7 +39,7 @@
 
 <!-- Displaying count of comments -->
 <div class="row">
-    <div class="col-12 mx-4">
+    <div class="col-12">
         <strong class="text-secondary">
             <i class="far fa-comments"></i> {{ comment_count }}
         </strong>
@@ -50,7 +50,7 @@
 </div>
 <!-- Displaying Comments -->
 <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 card mb-4 mt-3 ">
         <h3>Comments:</h3>
         <div class="card-body">
             <!-- We want a for loop inside the empty control tags

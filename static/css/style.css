@@ -46,6 +46,10 @@
     opacity: 0.8;
     padding: 40px 30px;
   }
+
+  .checked {
+    color:#f4d1f0;
+  }
   
   /* Blog page */
   .card {

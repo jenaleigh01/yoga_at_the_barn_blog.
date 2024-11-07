@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'about',
+    
 ]
 
 SITE_ID = 1
