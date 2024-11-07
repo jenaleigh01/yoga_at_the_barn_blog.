@@ -52,5 +52,25 @@ for (let button of deleteButtons) {
   const four = document.getElementById('forth')
   const five = document.getElementById('fifth')
 
+  const handleSelect = (selection) => {
+    switch(selection){
+      case 'first': {
+        one.classList.add('checked')
+        two.classList.remove('checked')
+        three.classList.remove('checked')
+        four.classList.remove('checked')
+        five.classList.remove('checked')
+      }
+    }
+  }
+
+  const arr = [one, two, three, four, five]
+
+  arr.forEach(item=> item.addEventListener('mouseover', (event)=>{
+    handleSelect(event.target.id)
+  }))
+
+
+
   
 
